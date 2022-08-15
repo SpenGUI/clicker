@@ -1,4 +1,5 @@
-local userName = game.Players.Localplayer.name
+local userName = game.Players.LocalPlayer.name
+lcoal userId = game.Players.LocalPlayer.UserId
 local allowed = false
 
 local blacklisted = {
@@ -12,13 +13,18 @@ else
 	allowed = true
 end
 
-local blacklisted = {
-"u
-}
+if table.find(blacklisted, UserId) then
+	allowed = false
+else
+	allowed = true
+end
 
 if allowed == false then
+  print("failed")
   game.Players.LocalPlayer:Kick("bruh)
+  
 else
   return false
+  print("passed")
 end
 
