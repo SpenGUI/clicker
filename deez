@@ -2,7 +2,8 @@ local userName = game.Players.Localplayer.name
 local allowed = false
 
 local blacklisted = {
-"u
+"Roblox"
+"1"
 }
 
 if table.find(blacklisted, userName) then
