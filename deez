@@ -1,3 +1,23 @@
-return{
-"Uma_dKid"
+local userName = game.Players.Localplayer.name
+local allowed = false
+
+local blacklisted = {
+"u
 }
+
+if table.find(blacklisted, userName) then
+	allowed = false
+else
+	allowed = true
+end
+
+local blacklisted = {
+"u
+}
+
+if allowed == false then
+  game.Players.LocalPlayer:Kick("bruh)
+else
+  return false
+end
+
